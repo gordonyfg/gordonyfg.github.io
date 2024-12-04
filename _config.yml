@@ -24,6 +24,7 @@ twitter_username: username
 github_username: username
 minimal_mistakes_skin: default
 search: true
+codeenable_copy_code_button: true
 
 # Build settings
 markdown: kramdown
@@ -105,6 +106,8 @@ defaults:
     values:
       layout: single
       author_profile: true
+      comments: true
+
 
 category_archive:
   type: liquid
