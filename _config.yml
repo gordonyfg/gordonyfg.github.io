@@ -13,12 +13,13 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: MM
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+title: "Gordon YFG's Portfolio"
 email:
-description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+description: "A showcase of my projects and a personal blog documenting my journey."
+url: "https://gordonyfg.github.io" # Your GitHub Pages URL
+baseurl: "" # Leave empty for user/organization site
+repository: "gordonyfg/gordonyfg.github.io" # Your repository
 twitter_username: username
 github_username: username
 minimal_mistakes_skin: default
@@ -58,22 +59,21 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name   : "First Lastname"
-  avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  name: "Gordon Yeung"
+  avatar: "/assets/images/avatar.jpg" # Path to your avatar image
+  bio: "R&D Engineer & Embedded System Engineer"
+  location: "Coquitlam, Canada"
+  email: "gordon.yeung.toa@gmail.com"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/"
+    - label: "Email"
+      url: "mailto:gordon.yeung.toa@gmail.com"
+      icon: "fas fa-envelope"
     - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/"
+      url: "https://github.com/gordonyfg"
+      icon: "fab fa-github"
+    - label: "LinkedIn"
+      url: "https://www.linkedin.com/in/gordon-yeung-349b66133/"
+      icon: "fab fa-linkedin"
 
 footer:
   links:
