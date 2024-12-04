@@ -12,11 +12,20 @@ Hello! I'm **Gordon Yeung**, a Senior R&D Engineer with a Master of Science in E
 
 ### Key Achievements
 
-- **Inventor**, WO2023084322: Developed a Broadband Profiler System for constructing three-dimensional profiles of targets.
-- **R&D Engineer**, WO2023026116: Created a Hand Temperature Monitoring Device for Chinese Medicine diagnosis and treatment.
-- **R&D Engineer**, WO2024084295: Designed an Optical Integrated Chip and a high-resolution, low-cost integrated handheld spectrometer.
-- **Project Leadership**: Led a team of 3 R&D engineers, achieving 100% of development milestones within deadlines.
-- **Innovation**: Developed a White Light 3D Profiler for live cell imaging, reducing system noise by 90% through advanced signal processing techniques.
+- **Inventor**, [WO2023084322: Broadband Profiler System and Method for Constructing a Three-Dimensional Profile of a Target](https://patents.google.com/patent/WO2023084322A1/en)  
+  Developed a system and method for creating detailed three-dimensional profiles, enhancing accuracy in metrology applications.
+
+- **R&D Engineer**, [WO2023026116: Hand Temperature Monitoring Device for Chinese Medicine Diagnosis and Treatment](https://patents.google.com/patent/WO2023026116A1/en)  
+  Created a device that accurately monitors hand temperature, improving diagnostic and treatment processes in traditional Chinese medicine.
+
+- **R&D Engineer**, [WO2024084295: Optical Integrated Chip and High-Resolution Low-Cost Integrated Handheld Miniature Spectrometer](https://patents.google.com/patent/WO2024084295A1/en)  
+  Designed an innovative optical integrated chip and spectrometer, reducing costs while maintaining high resolution for portable applications.
+
+- **Project Leadership**:  
+  Led a team of 3 R&D engineers, achieving 100% of development milestones within deadlines.
+
+- **Innovation**:  
+  Developed a White Light 3D Profiler for live cell imaging, reducing system noise by 90% through advanced signal processing techniques.
 
 ### Connect with Me
 
