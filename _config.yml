@@ -93,6 +93,8 @@ defaults:
       path: ""
       type: posts
     values:
+      classes: wide
+      toc: true
       layout: single
       author_profile: true
       read_time: true
