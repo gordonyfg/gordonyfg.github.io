@@ -10,7 +10,6 @@ tags:
   - Personal Website
   - Setup Guide
 ---
-# Configuring My Personal Portfolio Blog with Jekyll and Minimal Mistakes
 
 Welcome to my personal blog! In this post, I'll walk you through the configuration of my GitHub Pages site, which I built using Jekyll and the [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes) theme. Whether you're a fellow developer looking to set up your own portfolio or simply curious about customizing Jekyll themes, this guide should provide valuable insights.
 
