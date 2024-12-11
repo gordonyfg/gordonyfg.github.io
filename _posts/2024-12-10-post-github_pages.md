@@ -98,7 +98,7 @@ author:
   name: "Gordon Yeung"
   avatar: "/assets/images/your-avatar.jpg" # Path to your avatar image
   bio: "R&D Engineer & Embedded System Engineer"
-  location: "Coquitlam, Canada"
+  location: "British Columbia, Canada"
   links:
     - label: "Email"
       url: "mailto:gordon.yeung.toa@gmail.com"
