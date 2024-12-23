@@ -1,8 +1,3 @@
-Below is an updated version of the post with **explicit image attach paths** indicated in Markdown. Place the actual screenshots in your Jekyll blog’s `assets/images/gtest-demo/` directory (or another folder of your choice), then replace the placeholder file names (`where-g++.png`, `bootstrap-done.png`, etc.) with your own.
-
----
-
-```yaml
 ---
 title: "Setting up a GTest Hello World Project on Windows with MSYS2, MinGW-w64, and vcpkg"
 excerpt_separator: "<!--more-->"
@@ -15,7 +10,7 @@ tags:
   - Google Test
   - Setup Guide
 ---
-```
+
 
 Welcome to my updated demo of a **Google Test** “Hello, World!” project on Windows using **MSYS2**, **MinGW-w64**, and **vcpkg**. In this guide, we’ll walk through:
 
