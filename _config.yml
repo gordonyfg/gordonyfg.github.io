@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 minimal_mistakes_skin: "dark" 
 # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-title: "Gordon YFG's Portfolio"
+title: "Gordon YFG's Blog"
 email:
 description: "A showcase of my projects and a personal blog documenting my journey."
 url: "https://gordonyfg.github.io" # Your GitHub Pages URL
