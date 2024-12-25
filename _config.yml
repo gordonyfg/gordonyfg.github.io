@@ -62,7 +62,7 @@ plugins:
 author:
   name: "Gordon Yeung"
   avatar: "/assets/images/your-avatar.jpg" # Path to your avatar image
-  bio: "R&D Engineer & Embedded System Engineer | Email: gordon.yeung.toa@gmail.com""
+  bio: "R&D Engineer & Embedded System Engineer | Email: gordon.yeung.toa@gmail.com"
   location: "Coquitlam, Canada"
   links:
     - label: "Email"
