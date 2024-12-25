@@ -1,4 +1,3 @@
-```yaml
 ---
 title: "Automating Google Test on Windows with MSYS2, MinGW-w64, vcpkg, and GitHub Actions"
 excerpt_separator: "<!--more-->"
@@ -11,7 +10,7 @@ tags:
   - Google Test
   - GitHub Actions
 ---
-```
+
 Below is a blog post focused on **Continuous Integration (CI)** for our **GTest Hello World** project using **GitHub Actions** on Windows, leveraging MSYS2, MinGW-w64, and vcpkg. This builds on the project from [our previous blog post](https://gordonyfg.github.io/blog/post-gtest_mingw64_vscode_win/) (the one titled “Setting up a GTest Hello World Project on Windows with MSYS2, MinGW-w64, and vcpkg”). In this new post, we’ll show how to **automate** your project’s builds and test runs with a custom GitHub Actions workflow.
 
 <!--more-->

@@ -1,5 +1,3 @@
-
-```yaml
 ---
 title: "Extending GTest CI with Structured Tests and Execution Insights"
 excerpt_separator: "<!--more-->"
@@ -13,7 +11,6 @@ tags:
   - GitHub Actions
   - Continuous Integration
 ---
-```
 
 ## Extending GTest CI with Structured Tests and Execution Insights
 
