@@ -1,5 +1,5 @@
 ---
-title: "Setting Up Google Test (GTest) on Linux: A Complete Workflow"
+title: "Extending GTest CI with Structured Tests  on Linux"
 excerpt_separator: "<!--more-->"
 categories:
   - Blog
