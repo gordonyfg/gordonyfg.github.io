@@ -76,15 +76,14 @@ The Flask API enables:
 ### **Demo GIFs**
 
 Here are some demos showcasing the app in action:
-
 ### **1. Laptop Ubuntu Environment**  
-![Laptop Ubuntu Environment](asset/2025_01_03_pcUbuntu_output.gif)
+![Laptop Ubuntu Environment](/assets/2025_01_03_pcUbuntu_output.gif)
 
 ### **2. Raspberry Pi 400 (Master Server)**  
-![Raspberry Pi 400 (Master Server)](asset/2025_01_03_pi400output.gif)
+![Raspberry Pi 400 (Master Server)](/assets/2025_01_03_pi400output.gif)
 
 ### **3. Raspberry Pi 3B+ (Client)**  
-![Raspberry Pi 3B+ (Client)](asset/2025_01_03_pi3bplus_output.gif)
+![Raspberry Pi 3B+ (Client)](/assets/2025_01_03_pi3bplus_output.gif)
 
 ---
 
