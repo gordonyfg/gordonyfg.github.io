@@ -26,7 +26,7 @@ With a powerful setup like the **ROG Ally paired with an RTX 4070 Super eGPU**, 
 - 🚀 **Fast inference with GPU acceleration**
 - 💻 **Flexible model swapping** (try different LLMs freely)
 
-![alt text](../assets/2024_04_12_rog_ally_RTX4070super_lmstudio.png)
+![alt text]/assets/2024_04_12_rog_ally_RTX4070super_lmstudio.png)
 
 ## Step 1: Installing LM Studio
 
@@ -44,7 +44,7 @@ With a powerful setup like the **ROG Ally paired with an RTX 4070 Super eGPU**, 
 
 > 📌 Tip: You can adjust `n_gpu_layers` for performance tuning—start at 10 and increase based on responsiveness.
 
-![alt text](../assets/2025_04_12_lmstudio_model_download.png)
+![alt text]/assets/2025_04_12_lmstudio_model_download.png)
 
 ## Step 2: Installing the Continue Extension in VS Code
 
@@ -101,10 +101,10 @@ Try prompts like:
 
 - “Generate a Python script to fetch weather data from OpenWeatherMap.”
 
-![alt text](../assets/2025_04_12_test_local_LLM_py.png)
+![alt text]/assets/2025_04_12_test_local_LLM_py.png)
 
 Result
-![alt text](../assets/2025_04_12_test_local_LLM_py_result.png)
+![alt text]/assets/2025_04_12_test_local_LLM_py_result.png)
 
 - “Refactor this function to improve readability.”
 - “Explain this segment of C++ code.”
