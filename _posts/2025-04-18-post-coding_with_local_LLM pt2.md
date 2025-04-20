@@ -12,25 +12,19 @@ tags:
   - LM Studio
 ---
 
-# LMQuickBench: Building, Testing, and Publishing a Local LLM Benchmarking Tool
 
-[![PyPI version](https://badge.fury.io/py/lmquickbench.svg)](https://badge.fury.io/py/lmquickbench)
+<!--more-->
 
----
+## Why Build LMQuickBench?
 
-## 🧠 Introduction
+While tools like [LM Studio](https://lmstudio.ai/) make it easy to run LLMs locally, I wanted to measure and compare model performance. I wanted a tool that could:
 
-When I started experimenting with running Large Language Models (LLMs) locally through [LM Studio](https://lmstudio.ai/), I realized there was a missing piece:  
-**An easy, lightweight way to benchmark model performance.**
+- Quickly measure **response latency**
+- Track **token usage**
+- Calculate **tokens per second** output speed
+- Test both short prompts and complex coding tasks
 
-I wanted a tool that could quickly measure:
-- Response **latency**
-- **Token usage**
-- **Tokens per second** output speed
-
-So I decided to build it myself — **LMQuickBench**.
-
-Today, I'm excited to share that LMQuickBench is live on [PyPI](https://pypi.org/project/lmquickbench/), and anyone can install it with:
+With these goals in mind, I created **LMQuickBench**, now available on [PyPI](https://pypi.org/project/lmquickbench/). You can install it with:
 
 ```bash
 pip install lmquickbench
@@ -38,74 +32,50 @@ pip install lmquickbench
 
 ---
 
-## 💬 Why Build LMQuickBench?
+## How I Built LMQuickBench
 
-While LM Studio offers local LLM hosting with a nice UI,  
-there was **no simple way to batch test prompts and measure generation speed directly**.
+Building LMQuickBench was a rewarding experience. Here’s how I approached it:
 
-Pain points I wanted to solve:
-- See how different models perform (e.g., Qwen, DeepSeek)
-- Test on both short prompts and complex coding tasks
-- Get standardized, easy-to-compare metrics
+1. **Python CLI Tool**: I used Python and the `requests` library to interact with LM Studio’s local server API.
+2. **Flexible CLI Arguments**: I added options like `--prompt`, `--promptfile`, `--max_tokens`, and `--server_url` for flexibility.
+3. **Clean Project Structure**: I structured the project with `setup.py` and `pyproject.toml` for easy packaging.
+4. **PyPI Publishing**: I packaged the tool and published it to PyPI for public use.
+5. **GitHub Actions**: I set up CI/CD workflows to automatically test the tool on every push and pull request.
 
----
-
-## 🛠️ How I Built It
-
-- Developed a Python CLI tool using `requests` to connect to LM Studio’s local server API
-- Designed CLI arguments: `--prompt`, `--promptfile`, `--max_tokens`, `--server_url`
-- Packaged it into a clean project structure (`setup.py`, `pyproject.toml`)
-- Made it pip-installable
-- Set up GitHub Actions for automatic testing on every push and PR
-
-**Key decision:**  
-Allow flexible server URL input (`--server_url`) so LMQuickBench is **future-proof** for different deployment scenarios.
+One key decision was to allow a dynamic server URL (`--server_url`) to make LMQuickBench future-proof for different deployment scenarios.
 
 ---
 
-## ✨ Key Features
+## Key Features
 
-| Feature | Description |
-|:---|:---|
-| Single prompt or batch benchmarking | Flexible testing |
-| Dynamic server URL | Connect to any compatible LLM server |
-| Lightweight | Only depends on `requests` |
-| Expandable | CSV output and dashboard planned |
+LMQuickBench is designed to be simple yet powerful. Here are its key features:
 
----
-
-## 📦 Publishing to PyPI
-
-After local testing was successful,  
-I built distribution packages and uploaded LMQuickBench to [PyPI](https://pypi.org/project/lmquickbench/).
-
-It was an exciting milestone:
-- ✅ My first pip-installable open-source project
-- ✅ Publicly available for anyone to use worldwide
-
-Now, installing LMQuickBench is as easy as:
-
-```bash
-pip install lmquickbench
-```
+| Feature                     | Description                                      |
+|-----------------------------|--------------------------------------------------|
+| Single or batch benchmarking| Test individual prompts or batches of prompts.  |
+| Dynamic server URL           | Connect to any compatible LLM server.           |
+| Lightweight                 | Only depends on `requests`.                     |
+| Expandable                  | CSV output and dashboard visualization planned. |
 
 ---
 
-## 🚀 Quick Demo
+## Quick Demo
 
-Benchmark a simple prompt:
+Here’s how you can use LMQuickBench to benchmark your local LLMs:
+
+### Benchmark a Single Prompt
 
 ```bash
 lmquickbench --prompt "Explain recursion in computer science." --max_tokens 512
 ```
 
-Batch test a file of coding prompts:
+### Batch Test Prompts from a File
 
 ```bash
 lmquickbench --promptfile prompts/prompts_coding.txt --max_tokens 512
 ```
 
-**Example output:**
+**Example Output:**
 
 ```
 Testing prompt: Explain recursion.
@@ -115,29 +85,32 @@ Output: Recursion is a method where the solution to a problem depends on solutio
 
 ---
 
-## 🔥 Future Plans
+## Performance Comparison
 
-- CSV/JSON export of benchmarking results
-- Streamlit dashboard visualization
-- System resource (CPU, RAM) monitoring
-- Auto-scaling prompt generation for stress testing
+To demonstrate LMQuickBench’s capabilities, I tested several models with different prompts. Below is a summary of the results:
+
+| **Prompt**                                                                 | **Model**                      | **Latency (sec)** | **Tokens** | **Tokens/sec** | **Output Summary**                                                                                     |
+|----------------------------------------------------------------------------|--------------------------------|-------------------|------------|----------------|-------------------------------------------------------------------------------------------------------|
+| Write a Python function that checks whether a given string is a palindrome. | qwen2.5-coder-14b-instruct     | 2.95              | 58         | 19.68          | Provided a Python function to check if a string is a palindrome.                                    |
+| Write a Python class called Stack that implements push, pop, and peek operations. | qwen2.5-coder-14b-instruct     | 7.53              | 300        | 39.87          | Provided a Python class `Stack` with `push`, `pop`, and `peek` methods.                              |
+| Write a Python function to calculate the factorial of a number recursively. | qwen2.5-coder-14b-instruct     | 7.52              | 297        | 39.51          | Provided a recursive Python function to calculate the factorial of a number.                         |
+| Write a Python function that reverses a given string.                      | qwen2.5-coder-14b-instruct     | 4.46              | 148        | 33.21          | Provided a Python function to reverse a string using slicing.                                        |
+| Write a Python function that sums all elements in a list.                  | qwen2.5-coder-14b-instruct     | 5.83              | 215        | 36.86          | Provided a Python function to sum all elements in a list using `sum()`.                              |
+
+### Summary:
+
+- **Average Latency**: 6.57 sec
+- **Average Tokens/sec**: 36.91
+
+This table highlights how LMQuickBench can provide clear, actionable insights into model performance.
 
 ---
 
-## 🎯 Conclusion
+## Publishing to PyPI
 
-Building LMQuickBench taught me a lot:
-- Structuring a real Python CLI project
-- Pip packaging and PyPI publishing
-- Setting up GitHub CI/CD workflows
-- Turning ideas into production-ready tools
+Publishing LMQuickBench to [PyPI](https://pypi.org/project/lmquickbench/) was a major milestone for me. It’s my first pip-installable open-source project, and it’s now publicly available for anyone to use.
 
-This is just the beginning.  
-Feel free to try LMQuickBench — feedback and contributions are welcome!
-
-👉 GitHub Repo: [https://github.com/gordonyfg/LMQuickBench](https://github.com/gordonyfg/LMQuickBench)
-
-👉 PyPI Install:
+To install LMQuickBench, simply run:
 
 ```bash
 pip install lmquickbench
@@ -145,4 +118,30 @@ pip install lmquickbench
 
 ---
 
-**Let's keep pushing the boundaries of local LLM capabilities together 🚀.**
+## Future Plans
+
+I’m excited about the future of LMQuickBench. Here are some features I’m planning to add:
+
+- **CSV/JSON Export**: Save benchmarking results for further analysis.
+- **Streamlit Dashboard**: Visualize results in an interactive dashboard.
+- **System Monitoring**: Track CPU and RAM usage during benchmarking.
+- **Stress Testing**: Auto-scale prompt generation to test model limits.
+
+---
+
+## Conclusion
+
+Building LMQuickBench taught me a lot about structuring Python projects, publishing to PyPI, and setting up CI/CD workflows. It’s been a rewarding journey, and I’m thrilled to share this tool with the community.
+
+If you’re running LLMs locally, give LMQuickBench a try! Feedback and contributions are always welcome.
+
+👉 **GitHub Repo**: [https://github.com/gordonyfg/LMQuickBench](https://github.com/gordonyfg/LMQuickBench)  
+👉 **PyPI Install**:
+
+```bash
+pip install lmquickbench
+```
+
+---
+
+Let’s keep pushing the boundaries of local LLM capabilities together 🚀.
